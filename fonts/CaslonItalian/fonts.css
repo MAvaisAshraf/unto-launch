@@ -1,0 +1,29 @@
+/*
+        This font software is the property of Commercial Type.
+
+        You may not modify the font software, use it on another website, or install it on a computer.
+
+        License information is available at http://commercialtype.com/eula
+        For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+
+        Copyright (C) 2021 Schwartzco Inc.
+        License: 2103-TCYSUY     
+*/
+
+
+@font-face {
+  font-family: 'Caslon Italian Web';
+  src: url('CaslonItalian-Roman-Web.woff2') format('woff2'),
+       url('CaslonItalian-Roman-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.CaslonItalian-Roman-Web {
+  font-family: 'Caslon Italian Web';
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+

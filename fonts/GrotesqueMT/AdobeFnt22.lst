@@ -1,0 +1,147 @@
+%!Adobe-FontList 1.22
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/giulio/Google Drive/Work/Unto/Unto 2021/Design/Website/Unto_website_Ali_Folder/Document fonts/AdobeFnt22.lst
+FileLength:3747
+FileModTime:652617714
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:CaslonItalian-Roman
+FamilyName:Caslon Italian
+StyleName:Roman
+MenuName:Caslon Italian Roman
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Caslon Italian Roman
+WritingScript:Roman
+OutlineFileName:/Users/giulio/Google Drive/Work/Unto/Unto 2021/Design/Website/Unto_website_Ali_Folder/Document fonts/CaslonItalian-Roman.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:132528
+FileModTime:584457676
+NameArray:0,Mac,4,Caslon Italian Roman
+NameArray:0,Win,1,Caslon Italian Roman
+NameArray:0,Win,16,Caslon Italian
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GrotesqueMTStd-Black
+FamilyName:Grotesque MT Std
+StyleName:Black
+MenuName:Grotesque MT Std Black
+StyleBits:0
+WeightClass:900
+WidthClass:5
+AngleClass:0
+FullName:Grotesque MT Std Black
+WritingScript:Roman
+OutlineFileName:/Users/giulio/Google Drive/Work/Unto/Unto 2021/Design/Website/Unto_website_Ali_Folder/Document fonts/GrotesqueMTStd-Black.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:33772
+FileModTime:77127972
+NameArray:0,Mac,4,Grotesque MT Std Black
+NameArray:0,Win,1,Grotesque MT Std Black
+NameArray:0,Win,16,Grotesque MT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GrotesqueMTStd-Bold
+FamilyName:Grotesque MT Std
+StyleName:Bold
+MenuName:Grotesque MT Std
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Grotesque MT Std Bold
+WritingScript:Roman
+OutlineFileName:/Users/giulio/Google Drive/Work/Unto/Unto 2021/Design/Website/Unto_website_Ali_Folder/Document fonts/GrotesqueMTStd-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:32480
+FileModTime:77091972
+NameArray:0,Mac,4,Grotesque MT Std Bold
+NameArray:0,Win,1,Grotesque MT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GrotesqueMTStd-Condensed
+FamilyName:Grotesque MT Std
+StyleName:Condensed
+MenuName:Grotesque MT Std Cond
+StyleBits:0
+WeightClass:400
+WidthClass:3
+AngleClass:0
+FullName:Grotesque MT Std Condensed
+WritingScript:Roman
+OutlineFileName:/Users/giulio/Google Drive/Work/Unto/Unto 2021/Design/Website/Unto_website_Ali_Folder/Document fonts/GrotesqueMTStd-Condensed.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:31076
+FileModTime:77127972
+NameArray:0,Mac,18,Grotesque MT Std Cond
+NameArray:0,Mac,4,Grotesque MT Std Condensed
+NameArray:0,Win,1,Grotesque MT Std Cond
+NameArray:0,Win,16,Grotesque MT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GrotesqueMTStd
+FamilyName:Grotesque MT Std
+StyleName:Regular
+MenuName:Grotesque MT Std
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Grotesque MT Std
+WritingScript:Roman
+OutlineFileName:/Users/giulio/Google Drive/Work/Unto/Unto 2021/Design/Website/Unto_website_Ali_Folder/Document fonts/GrotesqueMTStd.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:33552
+FileModTime:77127972
+NameArray:0,Mac,4,Grotesque MT Std
+NameArray:0,Win,1,Grotesque MT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/giulio/Google Drive/Work/Unto/Unto 2021/Design/Website/Unto_website_Ali_Folder/Document fonts/Icon
+FileModTime:651756101
+%EndFont
+
