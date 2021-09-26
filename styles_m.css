@@ -1,8 +1,244 @@
+@font-face {
+  font-family: 'Caslon Italian Web';
+  src: url('./fonts/CaslonItalian-Roman-Web.woff2') format('woff2'),
+       url('./fonts/CaslonItalian-Roman-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
 
-/* our first breakpoint for responsive styles will be at 600px */
+
+:root {
+  --green: #377156;
+  --orange:#FF6026;
+  --light: #fafafa;
+  --dark: #111111;
+}
+
+body {
+  font-family: 'monotype-grotesque',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fafafa;
+}
+
+h1 {
+  font-family: 'monotype-grotesque',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5em;
+  line-height: 1.2;
+}
+
+header {
+  padding: 42px 16px;
+  text-align: center;
+  overflow: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.cart_counter{
+  background-color: var(--orange);
+  border-radius: 50%;
+  width:60px;
+  height: 60px;
+
+  position: absolute;
+  top: 2em;
+  right: 2em;
+}
+
+.cart_counter h1{
+  /* margin-top:4px; */
+
+  font-family: 'Caslon Italian Web';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 3em;
+  color: var(--bright);
+
+}
+
+
+.hero {
+  background-size: cover;
+  height: 99vh;
+  padding-top: 40vh;
+  /* padding-bottom: 250px; */
+	background-position: center;
+}
+
+.hero div {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+
+.hero p {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.shop {
+  overflow: hidden;
+  padding-bottom:24px;
+}
+
+.product {
+  width: 50%;
+  float: left;
+  text-align: center;
+  /* padding: 50px 20px 40px 20px; */
+}
+
+.shop h2{
+  font-family: 'Caslon Italian Web';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 9em;
+  color: var(--orange);
+}
+
+.shop img {
+  max-width: 250px;
+}
+
+.shopify-buy__btn {
+  background-color: var(--green);
+  color: white;
+  max-width: 300px;
+  width:100%;
+  border: none;
+  border-radius: 5px;
+  padding:8px;
+  font-family: 'monotype-grotesque',sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.shopify-buy__btn:hover {
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.1), 0 17px 50px 0 rgba(0,0,0,0.1);
+}
+
+
+.about {
+  height:50vh;
+  padding:60px;
+  background-color: #FF6026;
+  color:white;
+}
+
+.info {
+  padding:60px;
+  background-color: var(--bright);
+  color: var(--green);
+  column-count: 2;
+  column-gap: 40px;
+}
+
+.logos {
+  background-color: #EEAE9F;
+  padding: 20px 20px 35px 20px;
+  text-align: center;
+}
+
+.logos p {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.logos img {
+	/* we apply our margins equally on both the left and the right */
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+footer {
+  background-color: var(--green);
+  padding: 100px 30px;
+  overflow: hidden;
+}
+
+footer img {
+  float: left;
+}
+
+footer p {
+  float: right;
+  font-size: 14px;
+  color: var(--bright);
+  font-weight: 700;
+}
+
+.shop-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shopify-buy-frame--product {
+    width: 225px;
+}
+.shopify-buy__btn {
+    font-size: 35px;
+    font-weight: 700;
+    padding: 12px;
+    margin-left: 10px;
+}
+.shop img {
+    max-width: 225px;
+}
+
+@media(max-width:992px){
+    .product{
+        width:100%;
+    }
+}
+
+@media(max-width:600px){
+.shop h2 {
+    font-size: 6em;
+}
+.shop img {
+    max-width: 150px;
+}
+
+.shopify-buy__btn{
+    font-size:20px
+}
+.shop div{
+    padding:0;
+}
+}
+
+
+
+
+
+
+
+/* MEDIA */
+
+
+
 @media (max-width: 600px) {
 
-  .hero h2 {
+  /* .hero h2 {
     font-size: 32px;
     margin-bottom: 5px;
   }
@@ -10,12 +246,8 @@
   .hero {
     padding-top: 80px;
     padding-bottom: 80px;
-  }
+  } */
 
-  .chair {
-    height: 320px;
-    margin-top: 0;
-  }
 
   .shop div {
    	float: none;
@@ -23,98 +255,28 @@
     padding: 30px 30px 40px 30px;
 	}
 
-  .shop blockquote {
-    font-size: 20px;
-  }
-
   .shop p {
-		/* this will hide our elements from the page visually
-    but they will remain in the html */
     display: none;
-  }
-
-  body {
-    font-size: 14px;
-  }
-
-  header nav {
-		/* this will keep our nav vertically aligned with the h1 */
-    line-height: 24px;
   }
 
 }
 
 @media (max-width: 430px) {
 
-  header h1,
-  header nav {
-    float: none;
-  }
-
-  header nav a {
-    margin-left: 0;
-    margin-right: 12px;
-  }
-
-  .flowers img {
-    float: none;
-    width: auto;
-  }
-
   footer {
     padding: 30px 20px;
   }
-
-
 }
 
-@media (max-width: 820px) {
-  .logos img {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-}
 
-@media (max-width: 680px) {
-  .logos img {
-    margin: 0 auto 35px auto;
-    display: block;
-  }
 
-  .logos img:last-child {
-		/* here we remove the margin bottom from the last img only */
-    margin-bottom: 0;
-  }
-
-}
-
-/* these styles will only get applied *above* 820px screen width */
 @media (min-width: 820px) {
-
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-		/* the box shadow is very similar to a photoshop drop shadow,
-    it allows us to specify x/y axis, blur radius, spread and shadow
-    colour */
-    box-shadow: 0 1px 5px 0px rgba(51, 51, 51, 0.3);
-
-  }
-
-  .hero {
-		/* this creates the empty space above our hero for the
-    the header to sit in */
-    margin-top: 50px;
-  }
 
 }
 
 @media (min-width: 600px) {
   .shop {
- 		display: flex;
-  	flex-wrap: wrap;
+ 		/* display: flex;
+  	flex-wrap: wrap; */
   }
 }

@@ -29,13 +29,12 @@ h1 {
   font-family: 'monotype-grotesque',sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 48px;
-  line-height: 0.9;
-  margin-bottom: 15px;
+  font-size: 2.5em;
+  line-height: 1.2;
 }
 
 header {
-  padding: 32px 16px;
+  padding: 42px 16px;
   text-align: center;
   overflow: hidden;
 
@@ -45,6 +44,28 @@ header {
   width: 100%;
 }
 
+.cart_counter{
+  background-color: var(--orange);
+  border-radius: 50%;
+  width:60px;
+  height: 60px;
+
+  position: absolute;
+  top: 2em;
+  right: 2em;
+}
+
+.cart_counter h1{
+  /* margin-top:4px; */
+
+  font-family: 'Caslon Italian Web';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 3em;
+  color: var(--bright);
+
+}
 
 
 .hero {
@@ -56,7 +77,7 @@ header {
 }
 
 .hero div {
-  max-width: 960px;
+  max-width: 620px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -64,14 +85,6 @@ header {
   text-align: center;
 }
 
-/* .hero h1 {
-  font-family: 'monotype-grotesque',sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 48px;
-  line-height: 0.9;
-  margin-bottom: 15px;
-} */
 
 .hero p {
   max-width: 400px;
@@ -83,6 +96,27 @@ header {
 .shop {
   overflow: hidden;
   padding-bottom:24px;
+}
+
+.shop-description{
+  padding-top:24px;
+  text-align: center;
+  color: var(--green);
+}
+
+.shop-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopify-buy-frame--product {
+    width: 225px;
+}
+
+
+.shop img {
+    max-width: 225px;
 }
 
 .product {
@@ -112,9 +146,17 @@ header {
   width:100%;
   border: none;
   border-radius: 5px;
-  padding:8px
+  padding:8px;
+  font-family: 'monotype-grotesque',sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  padding: 12px;
+  margin-left: 10px;
 }
 
+.shopify-buy__btn:hover {
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.1), 0 17px 50px 0 rgba(0,0,0,0.1);
+}
 
 
 .about {
@@ -124,13 +166,12 @@ header {
   color:white;
 }
 
-.chair {
-	/* here we override the background image, position and padding from
-  our .hero class above (which is also on the element) */
-  background-image: url(full-bleed.jpg);
-  background-position: center bottom;
-  padding: 0;
-  height: 500px;
+.info {
+  padding:60px;
+  background-color: var(--bright);
+  color: var(--green);
+  column-count: 2;
+  column-gap: 40px;
 }
 
 .logos {
@@ -176,10 +217,28 @@ footer p {
 
 
 /* MEDIA */
-
+@media(max-width:992px){
+    .product{
+        width:100%;
+    }
+}
 
 
 @media (max-width: 600px) {
+
+  .shop h2 {
+      font-size: 6em;
+    }
+  .shop img {
+      max-width: 150px;
+  }
+
+  .shopify-buy__btn{
+      font-size:20px
+    }
+  .shop div{
+      padding:0;
+    }
 
   /* .hero h2 {
     font-size: 32px;
