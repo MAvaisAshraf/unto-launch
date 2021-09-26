@@ -55,6 +55,52 @@ header {
   right: 2em;
 }
 
+.shopify-buy__cart-toggle {
+  position:fixed;
+  top: 32px;
+  left: 1em;
+
+  background-color: var(--orange);
+  width:60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.shopify-buy__cart-toggle__count{
+
+  text-align:center;
+  vertical-align: center;
+  font-family: 'Caslon Italian Web';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 42px;
+  color: var(--bright);
+}
+
+/* .shopify-buy__cart-toggle__count{
+  position:fixed;
+  top: 2em;
+  left: 2em;
+
+  background-color: var(--orange);
+  border-radius: 50%;
+  width:60px;
+  height: 60px;
+} */
+
+/* the title should not be displayed as set in the js but it does */
+.shopify-buy--visually-hidden{
+  display:none;
+}
+
+/* doesn't really work because white bar is left at the bottom of the footer*/
+svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
+    display: none;
+}
+
+
+
 .cart_counter h1{
   /* margin-top:4px; */
 
@@ -64,9 +110,7 @@ header {
   font-stretch: normal;
   font-size: 3em;
   color: var(--bright);
-
 }
-
 
 .hero {
   background-size: cover;
@@ -136,7 +180,7 @@ header {
 }
 
 .shop img {
-  max-width: 250px;
+  max-width: 230px;
 }
 
 .shopify-buy__btn {
@@ -145,8 +189,7 @@ header {
   max-width: 300px;
   width:100%;
   border: none;
-  border-radius: 5px;
-  padding:8px;
+  border-radius: 10px;
   font-family: 'monotype-grotesque',sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -157,6 +200,13 @@ header {
 .shopify-buy__btn:hover {
   box-shadow: 0 8px 8px 0 rgba(0,0,0,0.1), 0 17px 50px 0 rgba(0,0,0,0.1);
 }
+
+
+.shopify-buy__cart{
+  background-color:red;
+}
+
+
 
 
 .about {
@@ -174,7 +224,7 @@ header {
   column-gap: 40px;
 }
 
-.logos {
+/* .logos {
   background-color: #EEAE9F;
   padding: 20px 20px 35px 20px;
   text-align: center;
@@ -187,32 +237,28 @@ header {
 }
 
 .logos img {
-	/* we apply our margins equally on both the left and the right */
   margin-left: 22px;
   margin-right: 22px;
-}
+} */
 
 footer {
   background-color: var(--green);
-  padding: 100px 30px;
-  overflow: hidden;
+  padding: 60px;
+  display: flex;
+  justify-content:space-between;
 }
 
-footer img {
-  float: left;
+footer h2 {
+  font-size: 24px;
+  color: var(--bright);
+  font-weight: 900;
 }
 
 footer p {
-  float: right;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--bright);
   font-weight: 700;
 }
-
-
-
-
-
 
 
 

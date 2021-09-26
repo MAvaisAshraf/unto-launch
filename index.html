@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="https://use.typekit.net/bhf2hos.css"> <!-- grotesque -->
   <link rel="stylesheet" type="text/css" href="2103-TCYSUY.css"> <!-- caslon -->
-  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="./assets/base.css">
   <link rel="stylesheet" href="style.css">
 
   <link rel="shortcut icon" type="image/png" href="assets/unto-favicon.ico">
@@ -27,7 +27,7 @@
       <img src="./assets/unto-toscano-logo@2x.png" width="200px">
     </h1>
 
-    <div class="cart_counter"> <h1> 1 </h1> </div>
+    <div class="cart_counter" id="toggle"> <h1> 1 </h1> </div>
 
   </header>
 
@@ -124,64 +124,121 @@
 
 
 <footer>
-  <img src="logo-footer.svg" />
-  <p>Become a stockists</p>
-  <p>Copyright &copy; 2021</p>
+  <div class="contact">
+    <h2>Contact us</h2>
+    <!-- <p> For any questions or recommendations </p>
+    <p> on our products, please contact: ciao@unto-toscano.com  </p> -->
+  </div>
+
+  <div class="retail">
+    <h2>Where to find us</h2>
+    <!-- <p> Become a stockists </p> -->
+  </div>
+
+  <div class="policy">
+    <h2>Our Policies</h2>
+
+    <!-- <p> Privacy Policy
+    Terms & Conditions
+    Shipping
+    </p> -->
+  </div>
+
+  <div class="menu">
+    <h2>This site</h2>
+
+    <!-- <p> Privacy Policy
+    Terms & Conditions
+    Shipping
+    </p> -->
+  </div>
+
 
 </footer>
 
 
 
-
-
+<!-- this is how multiple buttons should be done
+https://community.shopify.com/c/shopify-design/one-product-page-with-multiple-products-buy-buttons/m-p/210720#comment-434084 -->
 
 <script type="text/javascript">
+
   var client = ShopifyBuy.buildClient({
     domain: 'unto-toscano.myshopify.com',
     storefrontAccessToken: '31f2f5a9f93b96427bf3bde77b95d39c'
   });
+
   var ui = ShopifyBuy.UI.init(client);
+
   ui.createComponent('product', {
     id: 7140775887035,
     node: document.getElementById('button250ml'),
+    moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+
     options: {
-      "product": {
-        "iframe": false,
-        "contents": {
-          "img": false,
-          "title": false,
-          "price": false
+      product: {
+        iframe: false,
+        contents: {
+          img: false,
+          title: false,
+          price: false
         },
-        "text": {
+        text: {
           "button": "Add to cart"
         },
-        // "googleFonts": [
-        //   "Roboto"
-        // ]
       },
+
+      toggle: {
+        iframe: false,
+        sticky: false,
+        icon: false,
+        title: false,
+      },
+
     }
   });
+
+
+
+
+  // "toggle": {
+  //   "sticky": false,
+  //   "styles": {
+  //     "toggle": {
+  //       "background-color": "#3d1a11",
+  //       ":hover": {
+  //         "background-color": "#682c1d"
+  //       },
+  //       ":focus": {
+  //         "background-color": "#682c1d"
+  //       }
+  //     }
+  //   }
+  // },
 
   ui.createComponent('product', {
     id: 7140773789883,
     node: document.getElementById('button500ml'),
+    moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
     options: {
-      "product": {
-        "iframe": false,
-        "contents": {
-          "img": false,
-          "title": false,
-          "price": false
+      product: {
+        iframe: false,
+        contents: {
+          img: false,
+          title: false,
+          price: false
         },
-        "text": {
-          "button": "Add to cart"
+        text: {
+          button: "Add to cart"
         },
-        "googleFonts": [
-          "Source Sans Pro"
-        ]
       },
     }
   });
+
+
+
+
+
 </script>
 
 
