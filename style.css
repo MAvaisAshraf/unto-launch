@@ -20,7 +20,7 @@ body {
   font-weight: 700;
   font-style: normal;
 
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   color: #fafafa;
 }
@@ -30,6 +30,14 @@ h1 {
   font-weight: 700;
   font-style: normal;
   font-size: 2.5em;
+  line-height: 1.2;
+}
+
+p {
+  font-family: 'monotype-grotesque',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2em;
   line-height: 1.2;
 }
 
@@ -192,8 +200,6 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
 }
 
 
-
-
 .about {
   height:50vh;
   padding:60px;
@@ -257,9 +263,25 @@ footer p {
 
 @media (max-width: 600px) {
 
+  .info p{
+    font-size: 1em;
+  }
+
+  .info{
+    column-count: 1;
+    padding:20px;
+  }
+
+  .about p {
+    font-size: 1em;
+  }
+
+  .about{
+    padding:20px;
+  }
 
   .shop h2 {
-      font-size: 6em;
+      font-size: 8em;
     }
   .shop img {
       max-width: 150px;
