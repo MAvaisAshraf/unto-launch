@@ -1,89 +1,99 @@
 <!DOCTYPE html>
-<html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:url" content="https://unto-toscano.com">
   <title>Unto Toscano</title>
-  <meta name="description" content="Unto Toscano: Organic Extra Virgin Olive Oil from Tuscany">
-  <meta name="keywords" content="Unto, Unto Toscano, EVOO, Italian, Olive Oil, Extra Virgin Olive Oil, Olio Toscano, unto-toscano, unto_toscano">
+  <meta name="description" content="Unto Toscano: Organic Extra Virgin Olive Oil from abandoned pockets of Tuscan land.">
+  <meta name="keywords" content="Unto, Unto Toscano, EVOO, Italian, Olive Oil, Extra Virgin Olive Oil, Toscana, Tuscany, Oil, Hackney, Organic Food, Organic">
+
+  <link rel="stylesheet" href="https://use.typekit.net/bhf2hos.css"> <!-- grotesque -->
+  <link rel="stylesheet" type="text/css" href="2103-TCYSUY.css"> <!-- caslon -->
   <link rel="stylesheet" href="base.css">
-  <link rel="stylesheet" href="https://use.typekit.net/bhf2hos.css">
   <link rel="stylesheet" href="style.css">
-  <!-- <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css"> -->
+
   <link rel="shortcut icon" type="image/png" href="assets/unto-favicon.ico">
 
-  <script src="shopify.js"></script>
+  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+  <script src="http://sdks.shopifycdn.com/buy-button/1.0.0/buybutton.js"></script>
+
 </head>
 
 <body>
   <header>
     <h1>
-      <img src="logo.svg"/>
+      <img src="./assets/unto-toscano-logo@2x.png" width="250px">
     </h1>
 
-    <nav>
+    <!-- <nav>
       <a href="about.html"> about</a>
       <a href="blog.html"> blog</a>
       <a href="contact.html"> contact</a>
-    </nav>
+    </nav> -->
   </header>
 
-  <section class="hero">
+  <section class="hero" style="background-image: url(./img/hero.png);">
     <div>
-      <h2>
-        Test test test
-      </h2>
+      <h1>
+        Organic produce from abandoned pockets of Tuscan land
+      </h1>
       <p>
         Subtitle here
       </p>
     </div>
   </section>
 
-  <section class="product">
+  <section class="hero" style="background-image: url(./img/product.png);">
     <div>
-      <h2>
-        Test test test
-      </h2>
+      <h1>
+        Shop our first limited edition bottles range
+      </h1>
       <p>
         Subtitle here
       </p>
     </div>
   </section>
 
-  <section>
-    <div id='product-component-1632519451819'>test 1</div>
-  </section>
 
-  <section class="options">
+
+  <!-- <section class="options">
     <img src="img/hero.png" />
     <img src="img/hero.png" />
     <img src="img/hero.png" />
-  </section>
+  </section> -->
 
-  <section class="quotes">
+  <section class="shop">
 
-    <div class="liv">
-      <img src="quote_liv.png" />
-      <blockquote>
-        "I order all mmy flowers from here. It's the best service in town!"
-      </blockquote>
+
+    <div class="250ml">
+      <h2>250ml</h2>
+      <img src="./assets/Price250ml@2x.png" />
+      <div class="" id="button250ml"></div>
+
+      <!-- <blockquote>
+        250ml
+      </blockquote> -->
       <p>
-        Liv, designer in Highgate
+        250ml
       </p>
     </div>
 
-    <div class="chelsea">
-      <img src="quote_chelsea.png" />
-      <blockquote>
-        "Seriously. They deliver incredible flowers every time I order."
-      </blockquote>
+    <div class="500ml">
+      <h2>500ml</h2>
+      <img src="./assets/Price500ml@2x.png" />
+      <div class="" id="button500ml"></div>
+
+      <!-- <blockquote>
+        500ml
+      </blockquote> -->
       <p>
         Chelsea, artist in Shoreditch
       </p>
     </div>
+
+
   </section>
 
   <section class="hero chair">
@@ -102,5 +112,60 @@
     <img src="logo-footer.svg" />
     <p>Copyright &copy; 2020</p>
   </footer>
+
+
+
+
+
+
+  <script type="text/javascript">
+    var client = ShopifyBuy.buildClient({
+      domain: 'unto-toscano.myshopify.com',
+      storefrontAccessToken: '31f2f5a9f93b96427bf3bde77b95d39c'
+    });
+    var ui = ShopifyBuy.UI.init(client);
+    ui.createComponent('product', {
+      id: 7140775887035,
+      node: document.getElementById('button250ml'),
+      options: {
+        "product": {
+          "iframe": false,
+          "contents": {
+            "img": false,
+            "title": false,
+            "price": false
+          },
+          "text": {
+            "button": "Add to cart"
+          },
+          "googleFonts": [
+            "Source Sans Pro"
+          ]
+        },
+      }
+    });
+    ui.createComponent('product', {
+      id: 7140773789883,
+      node: document.getElementById('button500ml'),
+      options: {
+        "product": {
+          "iframe": false,
+          "contents": {
+            "img": false,
+            "title": false,
+            "price": false
+          },
+          "text": {
+            "button": "Add to cart"
+          },
+          "googleFonts": [
+            "Source Sans Pro"
+          ]
+        },
+      }
+    });
+  </script>
+
+
 
 </body>

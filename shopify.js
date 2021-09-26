@@ -208,7 +208,6 @@
     ]
   },
   "toggle": {
-    // "sticky": false,
     "styles": {
       "toggle": {
         "font-family": "PT Sans, sans-serif",

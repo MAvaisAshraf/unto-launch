@@ -1,58 +1,45 @@
+@font-face {
+  font-family: 'Caslon Italian Web';
+  src: url('./fonts/CaslonItalian-Roman-Web.woff2') format('woff2'),
+       url('./fonts/CaslonItalian-Roman-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
 body {
-  font-family: Roboto;
-	/* good range for body copy is 14px - 20px */
+  font-family: 'monotype-grotesque',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
   font-size: 16px;
-	/* line-height will be equal to 24px (16 * 1.5) */
   line-height: 1.5;
   color: #fafafa;
 }
 
 header {
-  padding: 10px 15px;
-	/* when we float elements inside of our header, they are taken outside
-  the regular box flow of the page, and as a result our header collapses
-
-  to get our header to have its proper height again, we can use overflow:
-  hidden as a trick to get it working */
+  padding: 32px 16px;
+  text-align: center;
   overflow: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-header h1 {
-  float: left;
-}
-
-header nav {
-  float: right;
-  margin-top: 3px;
-}
-
-header nav a {
-  color: #47353A;
-  text-decoration: none;
-  margin-left: 12px;
-	/* without changing our html we can make our letters uppercase */
-  text-transform: uppercase;
-  font-weight: 700;
-}
 
 .hero {
-  background-image: url(img/hero.png);
   background-size: cover;
-  padding-top: 230px;
-  padding-bottom: 450px;
-	background-position: center;
-}
-
-.product {
-  background-image: url(img/product.png);
-  background-size: cover;
-  padding-top: 230px;
-  padding-bottom: 500px;
+  height: 99vh;
+  padding-top: 40vh;
+  /* padding-bottom: 250px; */
 	background-position: center;
 }
 
 .hero div {
-  max-width: 540px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -60,11 +47,12 @@ header nav a {
   text-align: center;
 }
 
-.hero h2 {
-  font-family: David Libre;
+.hero h1 {
+  font-family: 'monotype-grotesque',sans-serif;
   font-weight: 700;
-  font-size: 64px;
-  line-height: 1;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 0.9;
   margin-bottom: 15px;
 }
 
@@ -74,48 +62,59 @@ header nav a {
   margin-right: auto;
 }
 
-.options {
+/* .options {
   overflow: hidden;
-}
+} */
 
-.options img {
+/* .options img {
   float: left;
-	/* by using a percentage width, our images will now be fluid in relation to
-  the size of their container */
+
   width: 33.333%;
+} */
+
+.shop {
+  /* overflow: hidden; */
 }
 
-.quotes {
-  overflow: hidden;
-}
-
-.quotes div {
+.shop div {
   width: 50%;
   float: left;
   text-align: center;
   padding: 50px 20px 40px 20px;
 }
 
+.shop h2{
+  font-family: 'Caslon Italian Web';
+  font-size: 7em;
+  font-style: normal;
+  font-stretch: normal;
+  color: #FF6026;
+}
+
 .cream-background {
   background-color: #F7F1EE;
 }
 
-.quotes img {
-  width: 75px;
-	/* we can round the corners of elements using pure css, by
-  setting it as a percentage it will turn our square avatars into
-  perfect circles */
-  border-radius: 100%;
+.shop img {
+  max-width: 100px;
+
+  /* border-radius: 100%; */
 }
 
-.quotes blockquote {
+.shop blockquote {
   font-family: David Libre;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.15;
   max-width: 400px;
   margin: 15px auto 5px auto;
+  color:black;
 }
+
+
+
+
+
 
 .chair {
 	/* here we override the background image, position and padding from
@@ -161,7 +160,16 @@ footer p {
   font-weight: 700;
 }
 
-/* our first breakpoint for responsive styles will be at 600px */
+
+
+
+
+
+
+
+/* MEDIA */
+
+
 @media (max-width: 600px) {
 
   .hero h2 {
@@ -179,19 +187,18 @@ footer p {
     margin-top: 0;
   }
 
-  .quotes div {
+  .shop div {
    	float: none;
     width: auto;
     padding: 30px 30px 40px 30px;
 	}
 
-  .quotes blockquote {
+  .shop blockquote {
     font-size: 20px;
   }
 
-  .quotes p {
-		/* this will hide our elements from the page visually
-    but they will remain in the html */
+  .shop p {
+
     display: none;
   }
 
@@ -199,24 +206,9 @@ footer p {
     font-size: 14px;
   }
 
-  header nav {
-		/* this will keep our nav vertically aligned with the h1 */
-    line-height: 24px;
-  }
-
-}
+} */
 
 @media (max-width: 430px) {
-
-  header h1,
-  header nav {
-    float: none;
-  }
-
-  header nav a {
-    margin-left: 0;
-    margin-right: 12px;
-  }
 
   .flowers img {
     float: none;
@@ -226,9 +218,8 @@ footer p {
   footer {
     padding: 30px 20px;
   }
-
-
 }
+
 
 @media (max-width: 820px) {
   .logos img {
@@ -237,6 +228,7 @@ footer p {
   }
 }
 
+
 @media (max-width: 680px) {
   .logos img {
     margin: 0 auto 35px auto;
@@ -244,37 +236,23 @@ footer p {
   }
 
   .logos img:last-child {
-		/* here we remove the margin bottom from the last img only */
     margin-bottom: 0;
   }
-
 }
 
 /* these styles will only get applied *above* 820px screen width */
 @media (min-width: 820px) {
 
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-		/* the box shadow is very similar to a photoshop drop shadow,
-    it allows us to specify x/y axis, blur radius, spread and shadow
-    colour */
-    box-shadow: 0 1px 5px 0px rgba(51, 51, 51, 0.3);
-  }
 
   .hero {
-		/* this creates the empty space above our hero for the
-    the header to sit in */
-    margin-top: 50px;
+
+     /* margin-top: 50px; */
   }
 
 }
 
 @media (min-width: 600px) {
-  .quotes {
+  .shop {
  		display: flex;
   	flex-wrap: wrap;
   }
