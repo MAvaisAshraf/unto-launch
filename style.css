@@ -170,13 +170,50 @@ footer p {
 
 
 
+/* code by mavaisashraf */
 
+.shop-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shopify-buy-frame--product {
+    width: 225px;
+    font-size: 40px;
+}
+.shopify-buy__btn {
+    font-size: 35px;
+    font-weight: 700;
+    padding: 12px;
+    margin-left: 10px;
+}
+.shop img {
+    max-width: 225px;
+}
 
 
 
 
 /* MEDIA */
 
+@media(max-width:992px){
+    .product{
+        width:100%;
+    }
+}
+
+@media(max-width:600px){
+.shop h2 {
+    font-size: 6em;
+}
+.shop img {
+    max-width: 150px;
+}
+
+.shopify-buy__btn{
+    font-size:20px
+}
+}
 
 
 @media (max-width: 600px) {
@@ -193,9 +230,9 @@ footer p {
 
 
   .shop div {
-   	float: none;
-    width: auto;
-    padding: 30px 30px 40px 30px;
+/*    	float: none; */
+    	width: auto;
+/*     padding: 30px 30px 40px 30px; */
 	}
 
   .shop p {
