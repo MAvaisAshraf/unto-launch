@@ -8,6 +8,13 @@
 }
 
 
+:root {
+  --green: #377156;
+  --orange:#FF6026;
+  --light: #fafafa;
+  --dark: #111111;
+}
+
 body {
   font-family: 'monotype-grotesque',sans-serif;
   font-weight: 700;
@@ -16,6 +23,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #fafafa;
+}
+
+h1 {
+  font-family: 'monotype-grotesque',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 0.9;
+  margin-bottom: 15px;
 }
 
 header {
@@ -48,14 +64,14 @@ header {
   text-align: center;
 }
 
-.hero h1 {
+/* .hero h1 {
   font-family: 'monotype-grotesque',sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 48px;
   line-height: 0.9;
   margin-bottom: 15px;
-}
+} */
 
 .hero p {
   max-width: 400px;
@@ -66,6 +82,7 @@ header {
 
 .shop {
   overflow: hidden;
+  padding-bottom:24px;
 }
 
 .product {
@@ -81,7 +98,7 @@ header {
   font-style: normal;
   font-stretch: normal;
   font-size: 9em;
-  color: #FF6026;
+  color: var(--orange);
 }
 
 .shop img {
@@ -89,7 +106,7 @@ header {
 }
 
 .shopify-buy__btn {
-  background-color: #377156;
+  background-color: var(--green);
   color: white;
   max-width: 300px;
   width:100%;
@@ -101,6 +118,7 @@ header {
 
 
 .about {
+  height:50vh;
   padding:60px;
   background-color: #FF6026;
   color:white;
@@ -134,8 +152,8 @@ header {
 }
 
 footer {
-  background-color: #47353A;
-  padding: 25px 30px;
+  background-color: var(--green);
+  padding: 100px 30px;
   overflow: hidden;
 }
 
@@ -146,7 +164,7 @@ footer img {
 footer p {
   float: right;
   font-size: 14px;
-  color: #CCC9CA;
+  color: var(--bright);
   font-weight: 700;
 }
 
