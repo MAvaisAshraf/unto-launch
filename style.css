@@ -44,16 +44,11 @@ header {
   width: 100%;
 }
 
-.cart_counter{
-  background-color: var(--orange);
-  border-radius: 50%;
-  width:60px;
-  height: 60px;
 
-  position: absolute;
-  top: 2em;
-  right: 2em;
+#logo {
+  transition: 0.3s;
 }
+
 
 .shopify-buy__cart-toggle {
   position:fixed;
@@ -67,7 +62,6 @@ header {
 }
 
 .shopify-buy__cart-toggle__count{
-
   text-align:center;
   vertical-align: center;
   font-family: 'Caslon Italian Web';
@@ -78,16 +72,6 @@ header {
   color: var(--bright);
 }
 
-/* .shopify-buy__cart-toggle__count{
-  position:fixed;
-  top: 2em;
-  left: 2em;
-
-  background-color: var(--orange);
-  border-radius: 50%;
-  width:60px;
-  height: 60px;
-} */
 
 /* the title should not be displayed as set in the js but it does */
 .shopify-buy--visually-hidden{
@@ -122,8 +106,7 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
 
 .hero div {
   max-width: 620px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
@@ -143,6 +126,8 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
 }
 
 .shop-description{
+  max-width: 620px;
+  margin: auto;
   padding-top:24px;
   text-align: center;
   color: var(--green);
@@ -263,7 +248,7 @@ footer p {
 
 
 /* MEDIA */
-@media(max-width:992px){
+@media (max-width:992px){
     .product{
         width:100%;
     }
@@ -271,6 +256,7 @@ footer p {
 
 
 @media (max-width: 600px) {
+
 
   .shop h2 {
       font-size: 6em;
@@ -297,11 +283,11 @@ footer p {
   } */
 
 
-  .shop div {
+  /* .shop div {
    	float: none;
     width: auto;
     padding: 30px 30px 40px 30px;
-	}
+	} */
 
   .shop p {
     display: none;
