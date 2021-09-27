@@ -69,6 +69,15 @@ header {
   border-radius: 50%;
 }
 
+.shopify-buy__cart-toggle:hover {
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.1), 0 17px 50px 0 rgba(0,0,0,0.1);
+}
+
+.shopify-buy__cart-toggle__count:hover {
+  cursor: pointer;
+}
+
+
 .shopify-buy__cart-toggle__count{
   text-align:center;
   vertical-align: center;
@@ -79,6 +88,7 @@ header {
   font-size: 42px;
   color: var(--bright);
 }
+
 
 
 /* the title should not be displayed as set in the js but it does */
