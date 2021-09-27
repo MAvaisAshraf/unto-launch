@@ -114,6 +114,19 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
   color: var(--bright);
 }
 
+
+.heroborder {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  height:99vh;
+  background: url(./img/hero.png);
+  background-size: cover;
+  background-position: center;
+  margin: 60px;
+}
+
 .hero {
   background-size: cover;
   height: 99vh;
@@ -129,7 +142,7 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
   padding-right: 20px;
   text-align: center;
 }
-/* 
+/*
 #hero-text{
   display: none;
 } */
