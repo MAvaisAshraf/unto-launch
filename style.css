@@ -129,7 +129,10 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
   padding-right: 20px;
   text-align: center;
 }
-
+/* 
+#hero-text{
+  display: none;
+} */
 
 .hero p {
   max-width: 400px;
